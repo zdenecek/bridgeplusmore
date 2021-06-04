@@ -1,0 +1,70 @@
+{
+	"COMMANDS": [
+		{
+			"COMMAND": "SaveSingleDistribution",
+			"DistData": {
+				"BidStr": "-1C-2S-D-P-3H-P-P-P",
+				"BoardID": "",
+				"BoardName": "test",
+				"ClubID": "AQAAAFkBAAAAAAAA",
+				"CommentBidding": "<p>drazbaa</p>",
+				"CommentBoard": "",
+				"CommentEast": "",
+				"CommentLead": "<p>Koment k vynosu<img style=\"width: 1em; height: 1em;\" src=\"https://bridgeplusserver.com/style/img/bn_spade.png\" /><img style=\"width: 1em; height: 1em;\" src=\"https://bridgeplusserver.com/style/img/bn_heart.png\" /><img style=\"width: 1em; height: 1em;\" src=\"https://bridgeplusserver.com/style/img/bn_diamond.png\" /></p>",
+				"CommentNorth": "",
+				"CommentPlay": "",
+				"CommentPostMortem": "",
+				"CommentSouth": "",
+				"CommentWest": "",
+				"CreateTime": "2021.06.04.13.12.40|2021-06-04 13:12",
+				"DealCategory": "0",
+				"DealNum": "0",
+				"DistListID": "",
+				"DistListName": "",
+				"Distr": {
+					"Board": "0",
+					"Dealer": "N",
+					"DistStr": "",
+					"E": {
+						"C": "53",
+						"D": "A98",
+						"H": "AQT83",
+						"S": "AK5"
+					},
+					"N": {
+						"C": "QT98764",
+						"D": "T643",
+						"H": "74",
+						"S": ""
+					},
+					"S": {
+						"C": "AKJ",
+						"D": "KQ52",
+						"H": "96",
+						"S": "J976"
+					},
+					"SectionNum": "1",
+					"SuggestedDistStr": "",
+					"Vuln": "NS",
+					"W": {
+						"C": "2",
+						"D": "J7",
+						"H": "KJ52",
+						"S": "QT8432"
+					}
+				},
+				"DistributionPlayStr": "4DAD5D7D",
+				"FinalBid": "3HN",
+				"ID": "AQAAACYnAAAAAAAA",
+				"LastUsed": "1899.12.30.00.00.00|1899-12-30 00:00",
+				"LeaderToEachTrick": "",
+				"SuggestedLeadCard": "AD",
+				"SuggestedTricks": "9",
+				"TeacherTags": "tag1 tag2",
+				"UserID": "AQAAAL6uCAAAAAAA",
+				"WinnerOfTrick": ""
+			},
+			"DistID": "AQAAACYnAAAAAAAA"
+		}
+	]
+}

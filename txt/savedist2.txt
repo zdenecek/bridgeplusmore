@@ -1,0 +1,71 @@
+{
+	"COMMANDS": [
+		{
+			"COMMAND": "SaveSingleDistribution",
+			"DistData": {
+				"BidStr": "-1C-2S-D-P-3H-P-P-P",
+				"BoardID": "",
+				"BoardName": "test",
+				"ClubID": "AQAAAFkBAAAAAAAA",
+				"CommentBidding": "",
+				"CommentBoard": "",
+				"CommentEast": "",
+				"CommentLead": "",
+				"CommentNorth": "",
+				"CommentPlay": "",
+				"CommentPostMortem": "",
+				"CommentSouth": "",
+				"CommentWest": "",
+				"CreateTime": "2021.06.04.13.12.40|2021-06-04 13:12",
+				"DealCategory": "0",
+				"DealNum": "0",
+				"DistListID": "",
+				"DistListName": "",
+				"Distr": {
+					"Board": "0",
+					"Dealer": "N",
+					"DistStr": "",
+					"E": {
+						"C": "53",
+						"D": "A98",
+						"H": "AQT83",
+						"S": "AK5"
+					},
+					"N": {
+						"C": "QT98764",
+						"D": "T643",
+						"H": "74",
+						"S": ""
+					},
+					"S": {
+						"C": "AKJ",
+						"D": "KQ52",
+						"H": "96",
+						"S": "J976"
+					},
+					"SectionNum": "1",
+					"SuggestedDistStr": "",
+					"Vuln": "NONE",
+					"W": {
+						"C": "2",
+						"D": "J7",
+						"H": "KJ52",
+						"S": "QT8432"
+					}
+				},
+				"DistributionPlayStr": "4DAD5D7D",
+				"FinalBid": "3HN",
+				"ID": "AQAAACYnAAAAAAAA",
+				"LastUsed": "1899.12.30.00.00.00|1899-12-30 00:00",
+				"LeaderToEachTrick": "E",
+				"Sequence": {},
+				"SuggestedLeadCard": "AD",
+				"SuggestedTricks": "0",
+				"TeacherTags": "",
+				"UserID": "AQAAAL6uCAAAAAAA",
+				"WinnerOfTrick": "E"
+			},
+			"DistID": "AQAAACYnAAAAAAAA"
+		}
+	]
+}

@@ -1,0 +1,70 @@
+{
+	"COMMANDS": [
+		{
+			"COMMAND": "SaveSingleDistribution",
+			"DistData": {
+				"BidStr": "",
+				"BoardID": "",
+				"BoardName": "testovaci rozdani",
+				"ClubID": "AQAAAFkBAAAAAAAA",
+				"CommentBidding": "",
+				"CommentBoard": "",
+				"CommentEast": "",
+				"CommentLead": "",
+				"CommentNorth": "",
+				"CommentPlay": "",
+				"CommentPostMortem": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at purus auctor, rhoncus nulla vel, efficitur massa. Aliquam erat volutpat. Nunc sollicitudin risus mi, eu accumsan dolor finibus et. Praesent non vulputate turpis. Duis malesuada ante magna, ut auctor leo aliquam id. Mauris nec odio egestas eros gravida facilisis eget id felis. Nunc mauris lorem, venenatis quis mauris id, viverra vehicula ante. Integer eget orci et eros pretium posuere vel et sem. Quisque faucibus velit in gravida scelerisque. Curabitur id lacinia ligula. Fusce ac consectetur</p>",
+				"CommentSouth": "",
+				"CommentWest": "",
+				"CreateTime": "2021.06.04.12.46.14|2021-06-04 12:46",
+				"DealCategory": "0",
+				"DealNum": "0",
+				"DistListID": "",
+				"DistListName": "",
+				"Distr": {
+					"Board": "0",
+					"Dealer": "N",
+					"DistStr": "",
+					"E": {
+						"C": "A",
+						"D": "AJ732",
+						"H": "KT9632",
+						"S": "A"
+					},
+					"N": {
+						"C": "KJT8",
+						"D": "QT84",
+						"H": "75",
+						"S": "JT6"
+					},
+					"S": {
+						"C": "76432",
+						"D": "K5",
+						"H": "J",
+						"S": "98754"
+					},
+					"SectionNum": "1",
+					"SuggestedDistStr": "",
+					"Vuln": "NONE",
+					"W": {
+						"C": "Q95",
+						"D": "96",
+						"H": "AQ84",
+						"S": "KQ32"
+					}
+				},
+				"DistributionPlayStr": "",
+				"FinalBid": "",
+				"ID": "AQAAACQnAAAAAAAA",
+				"LastUsed": "1899.12.30.00.00.00|1899-12-30 00:00",
+				"LeaderToEachTrick": "",
+				"SuggestedLeadCard": "",
+				"SuggestedTricks": "0",
+				"TeacherTags": "",
+				"UserID": "AQAAAL6uCAAAAAAA",
+				"WinnerOfTrick": ""
+			},
+			"DistID": "AQAAACQnAAAAAAAA"
+		}
+	]
+}

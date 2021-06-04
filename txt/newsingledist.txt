@@ -1,0 +1,73 @@
+{
+	"COMMANDS": [
+		{
+			"COMMAND": "NewSingleDistribution",
+			"Name": "test"
+		}
+	]
+}
+
+{
+	"NewSingleDistribution": {
+		"DistributionPlayStr": "",
+		"ID": "AQAAACYnAAAAAAAA",
+		"DistListName": "",
+		"BidStr": "",
+		"FinalBid": "",
+		"SuggestedLeadCard": "",
+		"SuggestedTricks": "0",
+		"DealNum": "0",
+		"CommentBoard": "",
+		"CommentBidding": "",
+		"CommentLead": "",
+		"CommentPlay": "",
+		"CommentPostMortem": "",
+		"CommentNorth": "",
+		"CommentEast": "",
+		"CommentSouth": "",
+		"CommentWest": "",
+		"BoardName": "test",
+		"BoardID": "",
+		"TeacherTags": "",
+		"DealCategory": "0",
+		"UserID": "AQAAAL6uCAAAAAAA",
+		"ClubID": "AQAAAFkBAAAAAAAA",
+		"DistListID": "",
+		"LeaderToEachTrick": "",
+		"WinnerOfTrick": "",
+		"CreateTime": "2021.06.04.13.12.40|2021-06-04 13:12",
+		"LastUsed": "1899.12.30.00.00.00|1899-12-30 00:00",
+		"Distr": {
+			"Board": "0",
+			"Dealer": "N",
+			"Vuln": "NONE",
+			"SectionNum": "1",
+			"DistStr": "",
+			"N": {
+				"S": "",
+				"H": "74",
+				"D": "T643",
+				"C": "QT98764"
+			},
+			"E": {
+				"S": "AK5",
+				"H": "AQT83",
+				"D": "A98",
+				"C": "53"
+			},
+			"S": {
+				"S": "J976",
+				"H": "96",
+				"D": "KQ52",
+				"C": "AKJ"
+			},
+			"W": {
+				"S": "QT8432",
+				"H": "KJ52",
+				"D": "J7",
+				"C": "2"
+			},
+			"SuggestedDistStr": ""
+		}
+	}
+}
