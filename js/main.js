@@ -1,24 +1,34 @@
+'use strict';
 require('dotenv').config();
 const puppeteer = require('puppeteer');
-const querystring = require('querystring');
+const Database = require("./database.js");
 
 console.log('The script is running...');
 
 (async () => {
-    const browser = await puppeteer.launch({ headless: false });
+
+    const db = new Database('boards.sqlite');
+    await db.open();
+    db.close();
+    return;
+    const browser = await puppeteer.launch({ headless: process.env.HEADLESS });
 
     await (async (browser) => {
         const page = await browser.newPage();
 
         await login(page);
 
-        console.log('The script is concluded...');
+        await createNewBoard(page, "test88");
+
+        
     })(browser).finally(async () => {
         await browser.close();
     })
 
+})().finally(()=> {
+    console.log('The script is concluded...');
     process.exit(0);
-})();
+});
 
 
 async function login(page) {
@@ -35,29 +45,32 @@ async function login(page) {
         page.keyboard.press('Enter'),
         page.waitForNavigation()
     ])
-    await page.screenshot({ path: "screenshots/test.jpg" });
 }
 
-async function createNewBoard(page) {
+async function createNewBoard(page, name) {
     await page.setRequestInterception(true);
 
+    const params = JSON.stringify({
+        "COMMANDS": [
+            {
+                "COMMAND": "NewSingleDistribution",
+                "Name": name,
+            },
+        ],
+    });
+
     page.once("request", interceptedRequest => {
+
         interceptedRequest.continue({
             method: "POST",
-            postData: " ",
+            postData: params,
             headers: {
                 ...interceptedRequest.headers(),
-                "Content-Type": "application/x-www-form-urlencoded"
             }
         });
     });
 
-    const response = await page.goto("https://postman-echo.com/post");
+    const response = await page.goto("https://bridgeplusserver.com/webapi.php?APIKEY=" + process.env.BM_APIKEY);
 
-    console.log({
-        url: response.url(),
-        statusCode: response.status(),
-        body: await response.text()
-    });
-
+    return response;
 }

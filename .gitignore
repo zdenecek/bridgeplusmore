@@ -2,4 +2,11 @@ screenshots/
 .vscode/
 node_modules/
 
+__pycache__/
+
 .env
+
+*.xlsx
+*.docx
+
+*.sqlite
