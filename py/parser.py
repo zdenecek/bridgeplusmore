@@ -15,5 +15,5 @@ for para in document.paragraphs:
 for char in document.paragraphs[2].text:
     print(str(ord(char)) + f' - [{char}]')
 
-
+db.close()
 

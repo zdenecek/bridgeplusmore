@@ -7,8 +7,8 @@ module.exports = class Database {
         this.filename = file;
     }
 
-    open() {
-        return new Promise((resolve, reject) => {
+    async open() {
+        await new Promise((resolve, reject) => {
             this.db = new sqlite3.Database(this.filename, (err) => {
                 if (err) {
                     console.error(err.message);
@@ -20,8 +20,9 @@ module.exports = class Database {
         })
     }
 
+
     close() {
-        console.log('Closing the database connection');
+        console.log('Closing the database connection...');
         this.db.close();
     }
 
