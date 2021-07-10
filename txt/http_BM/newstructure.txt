@@ -1,0 +1,14 @@
+{
+	"COMMANDS": [
+		{
+			"COMMAND": "DistListFromBoards",
+			"DistListData": [
+				"AQAAAPsmAAAAAAAA",
+				"AQAAAPomAAAAAAAA",
+				"AQAAAPkmAAAAAAAA",
+				"AQAAAPgmAAAAAAAA"
+			],
+			"Name": "Testovací struktura"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"COMMANDS": [
+		{
+			"COMMAND": "TeacherDistListGen",
+			"State": 3,
+			"UID": "",
+			"Values": {
+				"distlist_dealgentype": "3",
+				"distlist_filename": "",
+				"distlist_language": "0",
+				"distlist_lessontype": "3",
+				"distlist_name": "Test T2",
+				"distlist_numboards": "1",
+				"distlist_posttext": "",
+				"distlist_pretext": "<p>Koment</p>",
+				"distlist_tableselect": [
+					"AQAAAN4mAAAAAAAA",
+					"AQAAANgmAAAAAAAA"
+				],
+				"WIZARD_EditRun": "false",
+				"WIZARD_InstanceID": ""
+			}
+		}
+	]
+}   

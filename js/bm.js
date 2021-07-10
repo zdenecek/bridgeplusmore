@@ -37,6 +37,8 @@ module.exports = class BM {
 
     async createNewBoard({name}) {
 
+        console.log(`Creating board ${name}...`)
+
         const page = this.page;
         await page.setRequestInterception(true);
 
@@ -63,8 +65,6 @@ module.exports = class BM {
         const response = await page.goto("https://bridgeplusserver.com/webapi.php?APIKEY=" + process.env.BM_APIKEY);
 
         await page.setRequestInterception(false);
-
-
         return response;
     }
 

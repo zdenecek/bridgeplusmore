@@ -1,0 +1,9 @@
+01 Jesle
+02 Školka
+03 Školáček
+04 Školák
+05 Gymnazista
+06 Maturant
+07 Bakalář
+08 Magistr
+09 Doktorand

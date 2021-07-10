@@ -15,7 +15,7 @@ const BM = require("./bm.js");
         await bm.open();
     
         await new Promise((resolve, reject) => {
-            db.db.all("SELECT * FROM boards", [], (err, rows) => {
+            db.db.all("SELECT * FROM boards WHERE Year = ?", [1], (err, rows) => {
                 rows.forEach(element => {
                     console.log(element);
                 });

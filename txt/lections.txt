@@ -1,0 +1,334 @@
+### Year 1
+1|Pravidla sehrávky
+2|Pravidla licitace
+3|Ohodnocení listu
+4|Základní taktiky hlavního hráče v barevné hře
+5|Základní taktiky hlavního hráče v beztrumfové hře
+6|Sehrávky hlavního hráče
+7|Systém Lepší levná, zahájení, alertování
+8|Bilancování a fit, princip dělení třemi
+9|Princip rychlého sfitování
+10|Opakování vlastní barvy zahajitelem ve druhém kole
+11|Základní taktiky obránců
+12|Princip forcingu
+13|Princip bilancování na základě hranic bezpečnosti
+14|Hodnocení partie společenského bridže I
+15|Hodnocení partie společenského bridže II
+16|Zahájení jedna v drahé
+17|Získávání zdvihů na vysoké karty
+18|Zahájení bez 5-listu
+19|Zahájení 1 tref
+20|Finesy
+21|Zahájení 1 káro
+22|Vypracovávání
+23|Zahájení 1BT
+24|Sportovní bridž
+25|Snapování
+26|Zahájení 2BT
+27|První výnos
+28|Zahájení 2 trefy
+29|Taktika a etika
+30|Pokročilejší finesy I - expasy
+31|Zásahy do dražby
+32|Pokročilejší finesy II - Impasy
+33|Slemová dražba
+34|Pokročilejší finesy III - Impas podjížděním
+35|Opakování dražby
+### Year 2
+1|Vyvážená rozloha
+2|Plán sehrávky hlavního hráče v beztrumfových rozdáních
+3|Plán beztrumfové obrany
+4|Beztrumfové sehrávky
+5|Princip popisu listu
+6|Plán sehrávky hlavního hráče v barevných rozdáních
+7|Plán barevné obrany
+8|Barevné sehrávky
+9|Princip negativního opakování
+10|Markování do barvy partnera
+11|Markování do odhozů
+12|Bridge Master 1A 1-10
+13|Princip výzvy
+14|Pravděpodobnosti
+15|Bridge Master 1A 11-20
+16|Plán obrany v BT
+17|Beztrumfové závazky – Zadržení
+18|Beztrumfové závazky – Skrčení
+19|Beztrumfové závazky – Jiné hry se vstupy
+20|Beztrumfové závazky – Úhybné hry
+21|Bridge Master 1A 21-30
+22|Preventivní zahájení
+23|Výnosy do barvy
+24|Plán barevné hry – Snapování
+25|Plán barevné obrany – Snapování
+26|Preventivní zásah
+27|Bridge Master 1B 1-10
+28|Plán barevné hry – Délka
+29|Plán barevné obrany – Délka
+30|Transfery a silná dražba po zahájení 1BT, 2BT, odpověď 2k v konvenci Stayman
+31|Bridge Master 1B 11-20
+32|Plán barevné hry – Finesy
+33|Plán barevné obrany – Finesy
+34|Zkrácený Blackwood, Hoytova konvence
+35|Bridge Master 1B 21-30
+### Year 3
+1|Bridge Master 1M 1-15
+2|Hodnocení listu
+3|Umístění figur
+4|Oceňování UVNITŘ ČI MIMO
+5|Používání oceňovacích technik
+6|Bridge Master 1M 16-30
+7|Konvence Pokus o hru
+8|Jak zacházet s impasy
+9|Impasové manévry
+10|Bridge Master 1M 31-45
+11|Jak dražit levné barvy po zahájení 1BT
+12|Pravděpodobnosti
+13|Bridge Master 1M 46-60
+14|Algoritmus bilancování a bilancování v BT
+15|Barevné bilancování
+16|Základní body a modifikace
+17|Rozdělení pásem a oceňování listu
+18|Bridge Master 1M 61-75
+19|Rozehrání impasů a pokrývání figur
+20|Rozehrání barev
+21|Konvence DRURY na třetím místě a v zásahu
+22|Bridge Master 1M 76-90
+23|Jak blokovat
+24|Jak odpovídat na blok
+25|Obrana proti blokům
+26|Konvence MULTI a dvojbarevná zahájení
+27|Bridge Master 1M 91-105
+28|Impasy a podehrávání honérů
+29|Další podehrávání honérů
+30|Převzetí, zablokování a zbavování vstupů
+31|Bridge Master 1M 106-117
+32|Vynášení a markování do barevných závazků
+33|Další markování v průběhu sehrávky barevné hry
+34|Vynášení a markování do beztrumfových závazků
+35|Další markování v průběhu sehrávky beztrumfové hry
+### Year 4
+1|Bezpečná sehrávka – Specifické kombinace
+2|Bezpečná sehrávka – Nepříznivě dělené trumfy
+3|Bezpečná sehrávka – Úhybné hry a problémy vstupů
+4|Bezpečná sehrávka – Trumfová kontrola a snapy
+5|Bridge Master 2A 1-10
+6|Dražba po zahájení 2 trefy
+7|Blokování a odblokování – Zablokování obránců
+8|Blokování a odblokování – Vytváření vstupů
+9|Blokování a odblokování – Odblokování pro jiné akce
+10|Blokování a odblokování – Odblokování dlouhé barvy
+11|Zásady oboustranné dražby, konvence Wywiad
+12|Bridge Master 2A 11-20
+13|Další signály v obraně
+14|Eliminace – Striping and endplay
+15|Eliminace – Eliminace jako alternativa
+16|Eliminace – Včasný počátek, odložení odhozu, informace z dražby
+17|Eliminace – Časování, pojištění proti rozlohám
+18|Slemové speciality
+19|Bridge Master 2A 21-30
+20|Pokročilá dražba po 1BT
+21|Vzít či nevzít – Úhybné hry, ponechání bezpečné ruky
+22|Vzít či nevzít – Přerušení komunikace, kontrola v trumfech
+23|Vzít či nevzít – Vstupy
+24|Vzít či nevzít – Odložení odhozu, informace z dražby
+25|Operace s hláškami kontra a rekontra
+26|Bridge Master 2B 1-10
+27|Cue-bidy
+28|Extrašance – Impasy, tempo
+29|Extrašance – Úhybné hry
+30|Extrašance – Práce s trumfy
+31|Extrašance – Vstupy a časování
+32|Bridge Master 2B 11-20
+33|Konvence Gambling a Gestem
+34|Seznámení s Polským trefem
+35|Bridge Master 2B 21-30
+### Year 5
+1|Culbertonův impas, vylepšení Multi
+2|Dummy reversal
+3|Obrácený impas, Smithův signál
+4|Bridge Master  1-10
+5|Zásada vyloučení
+6|Konvence Wywiad
+7|Bath coup
+8|Trumfový impas
+9|Crosstrumping
+10|Bridge Master  11-20
+11|Zásada informovanosti I
+12|Zásada informovanosti II
+13|Manévr Guillemarda
+14|Trump coup
+15|Trump endplay
+16|Bridge Master  21-30
+17|Předsunutý cue-bid
+18|Zásahy do zahájení 1BT
+19|Pumpink
+20|Merrimac coup
+21|Deschapelles coup
+22|Bridge Master 3A 1-10
+23|Zásada forcingu I
+24|Zásada forcingu II
+25|Zásah Polským 1BT, konvence Čtvrtá barva
+26|Dilema coup
+27|Ďábelský manévr
+28|Intrafinesy
+29|Bridge Master 3A 11-20
+30|Konvence Lebensohl, cue-bidy krátkosti
+31|Seznámení s licitačním systémem Precision
+32|Promování
+33|Nůžky
+34|Coup en pasant
+35|Bridge Master 3A 21-30
+### Year 6
+1|Jednoduchý skvíz – Terminologie
+2|Jednoduchý skvíz – Ztrátové zdvihy
+3|Jednoduchý skvíz – Něco o vstupech
+4|Jednoduchý skvíz – Ještě o vstupech
+5|Jednoduchý skvíz – Několik zvláštností
+6|Jednoduchý skvíz – Obrana proti skvízu
+7|Jednoduchý skvíz – Už to umím?
+8|Bridge Master 3B 1-10
+9|Dopočítání bodů
+10|Dopočítání rozlohy I
+11|Dopočítání rozlohy II
+12|Bridge Master 2B 11-20
+13|Indikace z dražby
+14|Indikace se sehrávky I
+15|Indikace ze sehrávky II
+16|Bridge Master 3B 21-30
+17|Zachování všech možností I
+18|Zachování všech možností II
+19|Bridge Master  1-10
+20|Úhybné hry I
+21|Úhybné hry II
+22|Bridge Master  11-20
+23|Vstupy I
+24|Vstupy II
+25|Bridge Master  21-30
+26|Útok na přechody I
+27|Útok na přechody II
+28|Zbavení odchodu
+29|Vinje marka
+30|Pravděpodobnost I
+31|Pravděpodobnost II
+32|Ještě několik konvencí
+33|Časování I
+34|Časování II
+35|Seznámení se systémem ACOL
+### Year 7
+1|Dvojitý skvíz – Terminologie, klasifikace
+2|R-skvíz
+3|B2-skvíz
+4|Skvíz B1 s dopomocí
+5|Skvíz B1 bez dopomoci
+6|Dvojitý a jednoduchý skvíz
+7|Obrana proti dvojitému skvízu
+8|Jak už umím dvojité skvízy
+9|Bridge Master 4A 1-10
+10|Počítání bodů I
+11|Počítání bodů II
+12|Útokem I
+13|Útokem II
+14|Bridge Master 4A 11-20
+15|Více počítání I
+16|Více počítání II
+17|Hned zpočátku do toho
+18|Bridge Master 4A 21-30
+19|Milovat a mít rád I
+20|Milovat a mít rád II
+21|Další počítání I
+22|Další počítání II
+23|Bridge Master 4B 1-10
+24|Zamotaná pavučina I
+25|Zamotaná pavučina II
+26|Nedejte se oklamat I
+27|Nedejte se oklamat II
+28|Bridge Master 4B 11-20
+29|A opět počítání I
+30|A opět počítání II
+31|Obrana v koncovce I
+32|Obrana v koncovce II
+33|Bridge Master 4B 21-30
+34|Závěrečné počítání I
+35|Závěrečné počítání II
+### Year 8
+1|Bridge Master  1-10
+2|Eliminační techniky
+3|Stripskvíz – Úvodní příklady
+4|Stripskvíz – Skvíz na odstranění přebytečných winérů
+5|Striskvíz – Zranitelný stoper
+6|Striskvíz – Zpřesňování počtu, jednoduchý skvíz nebo stripskvíz
+7|Stripskvíz – Opožděné propouštění
+8|Stripskvíz – Ztrátová skvízová karta
+9|Obrana proti stripskvízu
+10|Jak mi jdou stripskvízy?
+11|Bridge Master  11-20
+12|Trojitý skvíz – Úvodní příklady
+13|Trojitý skvíz – Jedna nadějka proti skvízové kartě
+14|Dvě nadějky proti skvízové kartě
+15|Vienna coup v trojitém skvízu a tři nadějky proti skvízové kartě
+16|Trojitý a jednoduchý skvíz – Zdvojená nadějka
+17|Trojitý skvíz – Samostatné příklady
+18|Bridge Master  21-30
+19|Jednoduchý trumfový skvíz
+20|Obrana – Základní odhozy
+21|Obrana – Redukce možností
+22|Obrana – Informativní odhozy
+23|Obrana – Vytvoření alternativní nadějky
+24|Bridge Master 5A 1-10
+25|Obrana – Odblokovávající odhozy
+26|Obrana – Využívání vlastních možností
+27|Obrana – Odhozy v tísni
+28|Obrana – Chránění svých možností
+29|Bridge Master 5A 11-20
+30|Obrana – Jak se vyhnout odhozovým problémům
+31|Obrana – Naplno hned od začátku
+32|Obrana – Odhozy k oklamání soupeře
+33|Obrana – Třetí protivník
+34|Bridge Master 5A 21-30
+35|Obrana – Improvizace
+### Year 9
+1|Jak hrajete v družstvu – 1. oktáva
+2|Jak hrajete v družstvu – 2. oktáva
+3|Jak hrajete v družstvu – 3. oktáva
+4|Jak hrajete v družstvu – 4. oktáva
+5|Jak hrajete v družstvu – 5. oktáva
+6|Jak hrajete v družstvu – 6. oktáva
+7|Jak hrajete v družstvu – 7. oktáva
+8|Jak hrajete v družstvu – 8. oktáva
+9|Trojbarevný stripskvíz: zranitelný stoper
+10|Trojbarevný stripskvíz: opožděné propouštění
+11|Jednoduchý skvíz v držení (guardskvíz)
+12|Bridge Master 5B 1-10
+13|Tuhý boj – 1. oktáva
+14|Tuhý boj – 2. oktáva
+15|Tuhý boj – 3. oktáva
+16|Tuhý boj – 4. oktáva
+17|Tuhý boj – 5. oktáva
+18|Tuhý boj – 6. oktáva
+19|Tuhý boj – 7. oktáva
+20|Tuhý boj – 8. oktáva
+21|Složený skvíz – klasifikace, typ R neomezený
+22|Složený skvíz – typ R omezený
+23|Složený skvíz – typ L
+24|Bridge Master 5B 11-20
+25|Na ostří nože – 1. oktáva
+26|Na ostří nože – 2. oktáva
+27|Na ostří nože – 3. oktáva
+28|Na ostří nože – 4. oktáva
+29|Na ostří nože – 5. oktáva
+30|Na ostří nože – 6. oktáva
+31|Na ostří nože – 7. oktáva
+32|Na ostří nože – 8. oktáva
+33|Skvíz s alternativní nadějkou
+34|Dvojitý skvíz v držení
+35|Bridge Master 5B 21-30
+### Year 1 | Count: 35
+### Year 2 | Count: 35
+### Year 3 | Count: 35
+### Year 4 | Count: 35
+### Year 5 | Count: 35
+### Year 6 | Count: 35
+### Year 7 | Count: 35
+### Year 8 | Count: 35
+### Year 9 | Count: 35
+Lesson count: 315
