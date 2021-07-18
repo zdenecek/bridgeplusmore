@@ -12,11 +12,19 @@ class MainWindow:
         self.fileParser = fileParser
         self.tabs = {}
 
+    def test(self):
+        self.tabs['Zdroj'].addFile([r'C:\Users\zdnek\src\bridgepuppet\data\01.docx'])
+        self.tabs['Konverze'].loadSources()
+
     def start(self):
         self.window = tk.Tk()
         self.window.title("Načítač lekcí")
         self.window.geometry("1920x1080")
+        self.window.config()
         self.configureComponents()
+
+        # self.test()
+
         self.window.mainloop()
 
     def configureComponents(self):

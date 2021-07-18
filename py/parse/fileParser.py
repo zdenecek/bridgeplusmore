@@ -19,7 +19,7 @@ class FileParser:
             if m and len(paragraph.text) < 150:
                 if lection_num:
                     paragraphs = [paragraph.text for paragraph in document.paragraphs[curr_start:index-1]]
-                    lesson = Lesson(year, lection_num, lection_name, paragraphs)
+                    lesson = Lesson(year, lection_num, lection_name, paragraphs = paragraphs)
                     lessons.append(lesson)
 
                 lection_num = int(m.group(1))
@@ -27,7 +27,7 @@ class FileParser:
                 curr_start = index
             elif re.match(r'##', paragraph.text):
                 paragraphs = [paragraph.text for paragraph in document.paragraphs[curr_start:index-1]]
-                lesson = Lesson(year, lection_num, lection_name, paragraphs)
+                lesson = Lesson(year, lection_num, lection_name, paragraphs = paragraphs )
                 lessons.append(lesson)
         return lessons
 

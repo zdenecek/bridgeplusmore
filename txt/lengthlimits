@@ -1,0 +1,19 @@
+CommentBoard   1024;
+
+CommentBidding 4096;
+
+CommentLead 1024;
+
+CommentPlay  4096;
+
+CommentPostMortem  4096;
+
+ 
+
+CommentNorth 1024;
+
+CommentEast  1024;
+
+CommentSouth  1024;
+
+CommentWest  1024;

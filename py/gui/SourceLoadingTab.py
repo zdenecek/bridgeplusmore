@@ -45,11 +45,10 @@ class SourceLoadingTab:
         self.previewAreaLabel.pack()
         self.previewArea.pack()
 
-
     
-    def addFile(self):
+    def addFile(self, paths = None):
         data = {}
-        filepaths = filedialog.askopenfilenames(title="vyberte soubory s lekcemi")
+        filepaths = paths or filedialog.askopenfilenames(title="vyberte soubory s lekcemi")
         if len(filepaths) == 0:
             return
         for path in filepaths:
@@ -61,12 +60,12 @@ class SourceLoadingTab:
     def putData(self, data):
         self.previewTreeview.delete(*self.previewTreeview.get_children())
         self.currentData = data
+        self.trevieLessons = {}
         for year in data.values():
             self.previewTreeview.insert('', 'end', iid=year.year, text=str(year))
         
         for year in data.values():
             for lesson in year.lessons:
-                self.previewTreeview.insert(year.year, 'end', text=str(lesson), values=(len(lesson.content)))
+                id = self.previewTreeview.insert(year.year, 'end', text=str(lesson), values=(len(lesson.paragraphCount())))
+                self.trevieLessons[id] = lesson
 
-    def saveData(self):
-        pass
