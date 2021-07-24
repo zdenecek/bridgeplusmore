@@ -1,7 +1,8 @@
 
 from os import close
+from gui.xmlTreeview import XmlTreeview
 import tkinter as tk
-from tkinter import PhotoImage, ttk
+from tkinter import PhotoImage, StringVar, ttk
 from tkinter import scrolledtext
 from tkinter import simpledialog, messagebox
 import re
@@ -32,8 +33,12 @@ class SourceManipulationTab:
         self.optionsFrame = tk.Frame(rows[0])
 
         self.sourcesFrame = tk.Frame(rows[2])
-        self.dbFrame = tk.Frame(rows[2])
+        self.dbFrame = XmlTreeview(self.resultRepository, self.openXml, self.saveXml, rows[2])
+        self.dbFrame.grid(row=1, column=2, padx=10)
+        
         self.resultXmlFrame = tk.Frame(rows[2])
+
+    
 
         def configSource():
             fr = self.sourceFrame
@@ -144,12 +149,19 @@ class SourceManipulationTab:
             fr.lead = tk.Button(fr, text="Výnos",  command=self.leadCard)
             fr.lead.grid(row=33, column=2,columnspan=2)
 
+            fr.biddingAnswer = tk.Button(fr, text="Řešení dražby\n(hláška místo ?)", command=self.biddingAnswer)
+            fr.biddingAnswer.grid(row=34,columnspan=2)
+
         configOptions()
         
 
         def configSources():
             fr = self.sourcesFrame
             fr.grid(row=1, column=1, padx=10)
+
+            self.lessonLabel = StringVar(value="Lekce")
+            fr.lessonLabel = tk.Label(fr, textvariable=self.lessonLabel)
+            fr.lessonLabel.pack()
 
             fr.label = tk.Label(fr, text="Zdroje z .docx")
             fr.label.pack()
@@ -165,33 +177,8 @@ class SourceManipulationTab:
             fr.openSourceButton.pack(side="left")
 
 
+
         configSources()
-
-        def configDb():
-            fr = self.dbFrame
-            fr.grid(row=1, column=2, padx=10)
-
-
-            fr.label = tk.Label(fr, text="Objekty v databázi")
-            fr.label.pack()
-
-            fr.treeview = ttk.Treeview(fr)
-            fr.treeview['columns'] = ('createdAt')
-            fr.treeview.column("#0", width=300, minwidth=25)
-            fr.treeview.column("createdAt", width=130, minwidth=25)
-            fr.treeview.heading("#0", text="Objekt")
-            fr.treeview.heading("createdAt", text="Vytvořeno")
-            fr.treeview.pack()
-
-            fr.loadButton = tk.Button(fr, command=self.loadResults, text="Načíst db")
-            fr.loadButton.pack(side="left")
-            fr.selectButton = tk.Button(fr, command=self.openResult, text="Vybrat")
-            fr.selectButton.pack(side="left")
-            fr.saveButton = tk.Button(fr, command=self.saveXml, text="Uložit")
-            fr.saveButton.pack(side='left')
-
-
-        configDb()
 
         def configResultXml():
             fr = self.resultXmlFrame
@@ -242,37 +229,26 @@ class SourceManipulationTab:
         self.state = {}
 
         selectedId = self.sourcesFrame.treeview.selection()[0]
-        self.lesson = self.sourcesFrame.data[selectedId]
+        self.setLesson(self.sourcesFrame.data[selectedId])
 
         self.sourceFrame.text.delete('1.0', 'end')
         self.sourceFrame.text.insert('1.0', self.lesson.content)
 
         
-    def openResult(self):
+    def openXml(self):
         self.state = {}
-
-        selectedId = self.dbFrame.treeview.selection()[0]
-        self.lesson = self.dbFrame.data[selectedId]
+        self.setLesson(self.dbFrame.getSelectedLesson())
 
         self.resultXmlFrame.text.delete('1.0', 'end')
         self.resultXmlFrame.text.insert('1.0', self.lesson.xml)
-
-    def loadResults(self):
-        years = self.resultRepository.getAllYears()
-        self.dbFrame.data = {}
-        self.dbFrame.treeview.delete(*self.dbFrame.treeview.get_children())
-        for year in years:
-            self.dbFrame.treeview.insert('', 'end', iid=year.year, text=str(year))
-        
-        for year in years:
-            for lesson in year.lessons:
-                id = self.dbFrame.treeview.insert(year.year, 'end', text=str(lesson), values=(lesson.updatedAt,))
-                self.dbFrame.data[id] = lesson
-
         
     def saveXml(self):
         self.lesson.xml = self.resultXmlFrame.text.get('1.0', 'end')
         self.resultRepository.put(self.lesson)
+
+    def setLesson(self, lesson):
+        self.lesson = lesson
+        self.lessonLabel.set( lesson.__repr__())
 
 
     ######################################### MANIPULATIONS
@@ -316,7 +292,7 @@ class SourceManipulationTab:
         text = re.sub(" +", " ", text)
         
         for para in [p for p in text.split("\n") if len(p) > 0]:
-            self.addXml("p", content=para)
+            self.addXml("p", content=para.strip())
             self.addXml("p", close=True)
 
     def evalSeparator(self, sep):
@@ -471,7 +447,7 @@ class SourceManipulationTab:
             for bid in bids:
                 auction.append(self.parseBid(bid))
         
-        self.addXml("auction", attributes= {"onesided": "true"} if onlyPairBidding else {"dealer": ""})
+        self.addXml("auction", attributes= {"onesided": "true"} if onlyPairBidding else {"dealer": "", "vul":""})
         for bid in auction:
             self.addXml("bid", {"value": bid}, pair=False)
         self.addXml("auction", close=True)
@@ -496,7 +472,7 @@ class SourceManipulationTab:
         self.addXml("leadcard", close=True)
 
     def contract(self):
-        text = re.sub("výnos:*", "", self.selectedSourceText(), flags= re.IGNORECASE)
+        text = re.sub("závazek:*", "", self.selectedSourceText(), flags= re.IGNORECASE).lower()
         match = re.match("[1-7]", text)
         if(match.end() < len(text) and text[match.end()  + 0] in self.transformBid):
             suitchar = self.transformBid[text[match.end() + 0]]
@@ -504,6 +480,16 @@ class SourceManipulationTab:
             suitchar = self.transformBid[text[match.end() + 1]]
         else:
             suitchar = "?"
-        self.addXml("contract", {"value": match.group() + suitchar}, pair=False)
+        self.addXml("contract", {"value": match.group() + suitchar + "S"}, pair=False)
 
 
+    def biddingAnswer(self):
+        text = re.sub("odpověď:*|řešení:*", "", self.selectedSourceText(), flags= re.IGNORECASE).lower()
+        match = re.match("[1-7]", text)
+        if(match.end() < len(text) and text[match.end()  + 0] in self.transformBid):
+            suitchar = self.transformBid[text[match.end() + 0]]
+        elif(match.end() + 1 < len(text) and text[match.end()  + 1] in self.transformBid):
+            suitchar = self.transformBid[text[match.end() + 1]]
+        else:
+            suitchar = "?"
+        self.addXml("bidding-solution", {"value": match.group() + suitchar}, pair=False)

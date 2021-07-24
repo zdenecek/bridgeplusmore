@@ -1,10 +1,16 @@
 class Lesson:
-    def __init__(self, year, number, name, paragraphs = None, sourceContent = None, resultXml = None) -> None:
+    def __init__(self, year, number, name, id = None, text = None, xml = None, updatedAt = None) -> None:
         self.year = year
         self.number = number
         self.name = name
-        self.content = sourceContent or "\n\n".join(paragraphs)
-        self.xml = resultXml
+        self.id = id
+        self.content = text
+        self.xml = xml
+        self.updatedAt = updatedAt
+
+    def setContentFromParagraphs(self, paragraphs):
+
+        self.content = "\n\n".join(paragraphs)
 
     def paragraphCount(self):
         return self.content.split("\n\n")

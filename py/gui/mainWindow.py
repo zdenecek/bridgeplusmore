@@ -2,14 +2,17 @@
 import tkinter as tk
 from tkinter import ttk
 
+from gui.XmlToBmTab import XmlToBmTab
 from gui.SourceManipulationTab import SourceManipulationTab
 from gui.SourceLoadingTab import SourceLoadingTab
 
 class MainWindow: 
 
-    def __init__(self, db, fileParser):
-        self.db = db
+    def __init__(self, resultRepository, bmRepository, fileParser, bmParser):
+        self.resultRepository = resultRepository
         self.fileParser = fileParser
+        self.bmParser = bmParser
+        self.bmRepository = bmRepository
         self.tabs = {}
 
     def test(self):
@@ -30,8 +33,9 @@ class MainWindow:
     def configureComponents(self):
         self.tabControl = ttk.Notebook(self.window)
 
-        self.tabs['Zdroj'] = SourceLoadingTab(self.db, self.fileParser)
-        self.tabs['Konverze'] = SourceManipulationTab(self.db, self.tabs['Zdroj'])
+        self.tabs['Zdroj'] = SourceLoadingTab(self.fileParser)
+        self.tabs['Konverze'] = SourceManipulationTab(self.resultRepository, self.tabs['Zdroj'])
+        self.tabs['BridgeMore'] = XmlToBmTab(self.resultRepository, self.bmRepository, self.bmParser)
 
         for name, tab in self.tabs.items():
             tabRoot = ttk.Frame(self.tabControl)

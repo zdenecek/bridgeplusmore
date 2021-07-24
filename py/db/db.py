@@ -17,12 +17,14 @@ class Database:
         self.connection.close()
 
     def fetchAll(self, sql, params = []):
+        print("Running fetchAll with query: " + sql)
         self.cursor.execute(sql, params)
         self.connection.commit()
         return self.cursor.fetchall()
 
 
     def execute(self, sql, params = []):
+        print("Running execute with query: " + sql)
         res = self.cursor.execute(sql, params)
         self.connection.commit()
         return res

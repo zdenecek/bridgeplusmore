@@ -7,8 +7,7 @@ from tkinter import scrolledtext
 
 class SourceLoadingTab: 
 
-    def __init__(self, db, fileParser):
-        self.db = db
+    def __init__(self, fileParser):
         self.fileParser = fileParser
         self.currentData = {}
         
